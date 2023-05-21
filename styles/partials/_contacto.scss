@@ -1,0 +1,118 @@
+.rowcontacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.formulariocontacto {
+    color: $thirdColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .cajitafijo {
+        padding: 1rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .logocontacto {
+            background-color: $fifthColor;
+            border-radius: 50%;
+            height: 3rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .cajitamail {
+        padding: 1rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .logomail {
+            background-color: $fifthColor;
+            border-radius: 50%;
+            height: 3rem;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .cajitawsp {
+        padding: 1rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .logowsp {
+            background-color: $fifthColor;
+            border-radius: 50%;
+            height: 3rem;
+        }
+    }
+
+    .linkwsp {
+        text-decoration: none;
+        color: $thirdColor;
+    }
+
+    .contenidotelefono,
+    .contenidomail,
+    .contenidowsp {
+        width: 15rem;
+
+        .sinmargin {
+            display: flex;
+            margin: 0rem;
+        }
+    }
+
+    .logowsp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        margin: 1rem;
+    }
+
+}
+
+.textocontacto {
+    color: $secondColor;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: $thirdColor;
+}
+
+.form-floating {
+    margin-bottom: 0.5rem;
+
+    .nombre,
+    .email,
+    .mensaje {
+        margin-right: 1rem;
+    }
+}
+
+
+.mapaubicacion {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+
+    .mapaoficina {
+        max-width: 100%;
+    }
+}

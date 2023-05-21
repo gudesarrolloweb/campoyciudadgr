@@ -1,0 +1,75 @@
+    .nosotros__div__div {
+        display: flex;
+        background-image: url("../img/imagen de fondo de productos.webp"); /*colocar foto de fondo del local*/
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+
+        .main__section__cajita__nosotros {
+            padding: 2rem;
+            display: flex;
+            margin-right: auto;
+            margin-left: auto;
+            flex-direction: column;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            justify-content: center;
+            text-align: center;
+            color: $thirdColor;
+
+            .main__h1__nosotros {
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 3rem;
+                text-shadow: 0px 0px 10px $thirdColor;
+            }
+
+            .main__p__nosotros {
+                display: flex;
+                margin-right: auto;
+                margin-left: auto;
+                font-size: 1.2rem;
+                text-shadow: 0px 0px 10px $thirdColor;
+            }
+
+        }
+
+        .imagenlocal {
+            display: flex;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+
+        }
+
+        .carousel {
+            display: flex;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .accordion {
+            display:flexbox;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .fondonegro {
+            background-color: $thirdColor;
+        }
+    }

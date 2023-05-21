@@ -1,0 +1,66 @@
+.tarjetitas {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.cuadroscroll {
+    margin-bottom: 1rem;
+
+    .scrolltext {
+        list-style: none;
+        height: 180px;
+        border: 1px solid $eightColor;
+        background: $seventhColor;
+        overflow-y: scroll;
+    
+        .textolistita {
+            padding: 0.3rem;
+        }
+    }
+}
+
+.dimensionespantalones {
+    height: 250px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dimensionesber {
+    margin-top: 3.1rem;
+    margin-bottom: 3.1rem;
+    height: 150px;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dimensionescamisa, .dimensionesmameluco, .dimensionlimitador {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 220px;
+    width: 220px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dimensionesmasfacial {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 252px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.dimensioncono, .dimensionmalla, .dimensioncarteleria
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 212px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.botonvolver {
+    margin-right: 3rem;
+    padding-bottom: 1rem;
+}

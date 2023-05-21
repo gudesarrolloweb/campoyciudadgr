@@ -1,0 +1,800 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+.fondoblancotexto {
+  background-color: #F0F4EF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+*::-moz-selection {
+  background-color: #001a57;
+  color: #ffffff;
+}
+*::selection {
+  background-color: #001a57;
+  color: #ffffff;
+}
+
+header {
+  background-color: #000000;
+  display: flex;
+  gap: 2rem;
+  grid-gap: 2rem;
+}
+header .navbar {
+  animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  align-items: center;
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: space-evenly;
+}
+header .navbar .cyc {
+  height: 3.9rem;
+  margin-left: 0.8rem;
+  border-radius: 0.2rem;
+}
+header .navbar .menu {
+  display: flex;
+  flex: 1;
+  position: relative;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 1rem;
+  grid-gap: 1rem;
+  align-items: center;
+  padding-block: 1rem;
+  top: 0;
+  width: 100%;
+  margin: 0rem;
+}
+header .navbar .menu .menu_item a {
+  color: #F0F4EF;
+  text-decoration: none;
+  font-size: larger;
+}
+header .navbar .menu .menu_item a:hover {
+  background: rgba(52, 73, 102, 0.3215686275);
+}
+@keyframes slide-in-fwd-center {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+header .menu_item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+header .menu_item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+header .menu_item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+header .menu_item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+header .menu_item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+body .main__div__div {
+  display: flex;
+  background-image: url("../img/fondo gaucho.png");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+body .main__div__div .main__section__cajita {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  max-width: 30rem;
+  margin: 7rem 0 0 2rem;
+}
+body .main__div__div .main__section__cajita .main__h1 {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 3rem;
+  text-shadow: 0px 0px 10px #000000;
+}
+body .main__div__div .main__section__cajita .main__h2 {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+body .main__div__div .main__section__cajita .main__p {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 10px #000000;
+}
+body .main__div__div .main__section__cajita .mainboton {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+body .main__div__div .main__section__cajita .mainboton .main__button {
+  padding: 0rem 3rem 0rem 3rem;
+  background-color: #000000;
+  color: #ffffff;
+  border: 0.4rem double #ffffff;
+  box-shadow: 0rem 0rem 1rem #ffffff;
+  margin: 1rem;
+  max-width: 22rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+body .main__div__div .main__section__cajita .mainboton .main__button:hover {
+  background-color: #ffffff;
+  border: 0.4rem double #000000;
+  box-shadow: 0rem 0rem 2.5rem #ffffff;
+}
+body .main__div__div .main__section__cajita .mainboton .main__button:hover .consultas {
+  color: #000000;
+}
+body .main__div__div .main__section__cajita .mainboton .main__button .consultas {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.titulogu {
+  background-color: #000000;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+.titulogu .tituloppal {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.titulogu p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.titulogu p .itemsnosotros {
+  margin-top: 1.5rem;
+}
+
+.fondoblancotitulo {
+  background-color: #F0F4EF;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.fondoblancotexto {
+  border-radius: 1rem;
+}
+
+footer {
+  background-color: #000000;
+}
+footer .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+}
+footer .row .pie :hover {
+  background: rgba(52, 73, 102, 0.3215686275);
+}
+footer .copy {
+  display: flex;
+  margin-top: 2rem;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+
+.nosotros__div__div {
+  display: flex;
+  background-image: url("../img/imagen de fondo de productos.webp"); /*colocar foto de fondo del local*/
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.nosotros__div__div .main__section__cajita__nosotros {
+  padding: 2rem;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+.nosotros__div__div .main__section__cajita__nosotros .main__h1__nosotros {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 3rem;
+  text-shadow: 0px 0px 10px #000000;
+}
+.nosotros__div__div .main__section__cajita__nosotros .main__p__nosotros {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 10px #000000;
+}
+.nosotros__div__div .imagenlocal {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.nosotros__div__div .carousel {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.nosotros__div__div .accordion {
+  display: flexbox;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.nosotros__div__div .fondonegro {
+  background-color: #000000;
+}
+
+.tarjetitas {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cuadroscroll {
+  margin-bottom: 1rem;
+}
+.cuadroscroll .scrolltext {
+  list-style: none;
+  height: 180px;
+  border: 1px solid #ddd;
+  background: #f1f1f1;
+  overflow-y: scroll;
+}
+.cuadroscroll .scrolltext .textolistita {
+  padding: 0.3rem;
+}
+
+.dimensionespantalones {
+  height: 250px;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dimensionesber {
+  margin-top: 3.1rem;
+  margin-bottom: 3.1rem;
+  height: 150px;
+  width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dimensionescamisa, .dimensionesmameluco, .dimensionlimitador {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 220px;
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dimensionesmasfacial {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 252px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dimensioncono, .dimensionmalla, .dimensioncarteleria {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 212px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.botonvolver {
+  margin-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+.rowcontacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+.formulariocontacto {
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.formulariocontacto .cajitafijo {
+  padding: 1rem;
+  margin: 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.formulariocontacto .cajitafijo .logocontacto {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.formulariocontacto .cajitamail {
+  padding: 1rem;
+  margin: 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.formulariocontacto .cajitamail .logomail {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 3rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.formulariocontacto .cajitawsp {
+  padding: 1rem;
+  margin: 0rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.formulariocontacto .cajitawsp .logowsp {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 3rem;
+}
+.formulariocontacto .linkwsp {
+  text-decoration: none;
+  color: #000000;
+}
+.formulariocontacto .contenidotelefono,
+.formulariocontacto .contenidomail,
+.formulariocontacto .contenidowsp {
+  width: 15rem;
+}
+.formulariocontacto .contenidotelefono .sinmargin,
+.formulariocontacto .contenidomail .sinmargin,
+.formulariocontacto .contenidowsp .sinmargin {
+  display: flex;
+  margin: 0rem;
+}
+.formulariocontacto .logowsp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  margin: 1rem;
+}
+
+.textocontacto {
+  color: #F0F4EF;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #000000;
+}
+
+.form-floating {
+  margin-bottom: 0.5rem;
+}
+.form-floating .nombre,
+.form-floating .email,
+.form-floating .mensaje {
+  margin-right: 1rem;
+}
+
+.mapaubicacion {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.mapaubicacion .mapaoficina {
+  max-width: 100%;
+}
+
+.color-select {
+  background-color: rgba(54, 54, 54, 0.8549019608);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.color-select div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+/***************************Calzado de Seguridad*********************/
+/***************************Calzado de Seguridad*********************/
+/*******zapato ozono*******/
+.color-select #zoonegro {
+  background: #333;
+}
+
+.color-select #zoomarron {
+  background: #a52a2a;
+}
+
+/*******zapatilla sneaker*******/
+.color-select #zosnegro {
+  background: #333;
+}
+
+.color-select #zosmarron {
+  background: #a52a2a;
+}
+
+.color-select #zosgris {
+  background: #808080;
+}
+
+/*******zapatilla kryton*******/
+.color-select #zoknegro {
+  background: #333;
+}
+
+.color-select #zokazul {
+  background: #001a57;
+}
+
+/***********botin ozono*********/
+.color-select #boonegro {
+  background: #333;
+}
+
+.color-select #boomarron {
+  background: #a52a2a;
+}
+
+.color-select #booblanco {
+  background: #ffffff;
+}
+
+/***********botin ombu sneaker*********/
+.color-select #bosmarron {
+  background: #a52a2a;
+}
+
+.color-select #bosgris {
+  background: #808080;
+}
+
+/***********botin ombu krypton************/
+.color-select #boknegro {
+  background: #333;
+}
+
+.color-select #bokazul {
+  background: #001a57;
+}
+
+/***************************Indumentaria*********************/
+/***************************Indumentaria*********************/
+/*************pantalon cargo***********/
+.color-select #pcbeige {
+  background: #e0e094;
+}
+
+.color-select #pcnegro {
+  background: #333;
+}
+
+.color-select #pcazul {
+  background: #001a57;
+}
+
+/***************bombacha de campo************/
+.color-select #bcbeige {
+  background: #e0e094;
+}
+
+.color-select #bcnegro {
+  background: #333;
+}
+
+.color-select #bcverde {
+  background: #014e01;
+}
+
+/************Camisa*************/
+.color-select #cazul {
+  background: #001a57;
+}
+
+.color-select #cbeige {
+  background: #e0e094;
+}
+
+/***************************Protecciones*********************/
+/***************************Protecciones*********************/
+/***************Casco************/
+.color-select #cascoblanco {
+  background: #ffffff;
+}
+
+.color-select #cascorojo {
+  background: #ff0000;
+}
+
+.color-select #cascoamarillo {
+  background: #fffb00;
+}
+
+/****************auditivo****************/
+.color-select #auditivonegro {
+  background: #333;
+}
+
+.color-select #auditivoverde {
+  background: #014e01;
+}
+
+.color-select #auditivonaranja {
+  background: #f08800;
+}
+
+/**************guantes****************/
+.color-select #guantenegro {
+  background: #333;
+}
+
+.color-select #guanterojo {
+  background: #ff0000;
+}
+
+.color-select #guanteverde {
+  background: #014e01;
+}
+
+/***********facial***********/
+.color-select #facialblanco {
+  background: #ffffff;
+}
+
+.color-select #facialnegro {
+  background: #333;
+}
+
+/*************olcular**********/
+.color-select #ocularblanco {
+  background: #ffffff;
+}
+
+.color-select #ocularnegro {
+  background: #333;
+}
+
+/***********respiratoria*******/
+.color-select #respiratorianegro {
+  background: #333;
+}
+
+.color-select #respiratoriagris {
+  background: #808080;
+}
+
+/***************************Primeros auxilios*********************/
+/***************************Primeros auxilios*********************/
+/***************botiquin************/
+.color-select #botiquinblanco {
+  background: #ffffff;
+}
+
+.color-select #botiquinmarron {
+  background: #a52a2a;
+}
+
+/*************COLORES************/
+/*************COLORES************/
+/*************COLORES************/
+/*************COLORES************/
+.color-select #negro {
+  background: #333;
+}
+
+.color-select #marron {
+  background: #a52a2a;
+}
+
+.color-select #beige {
+  background: #e0e094;
+}
+
+.color-select #azul {
+  background: #001a57;
+}
+
+.color-select #verde {
+  background: #014e01;
+}
+
+.color-select #blanco {
+  background: #ffffff;
+}
+
+.color-select #gris {
+  background: #808080;
+}
+
+.color-select #rojo {
+  background: #ff0000;
+}
+
+.color-select #naranja {
+  background: #f08800;
+}
+
+.color-select #amarillo {
+  background: #fffb00;
+}
+
+/*************COLORES************/
+/*************COLORES************/
+/*************COLORES************/
+/*************COLORES************/
+@media screen and (max-width: 991px) {
+  /*********************** NOSOTROS *********************/
+  /******************************* MAPA Y DE CONTACTOS *******************************/
+  .formulariocontacto {
+    width: 100%;
+  }
+  .mapaubicacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mapaubicacion .mapaoficina {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 720px) {
+  /******************************* MAPA Y FORMULARIO DE CONTACTOS *******************************/
+  .formulariocontacto {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+  .mapaubicacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .mapaubicacion .mapaoficina {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 575px) {
+  /****************************** INICIO *********************************/
+  body .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "A1" "B1" "A2" "B2" "A3" "B3" "A4" "B4" "A5" "B5" "A6" "B6" "A7" "B7" "A8" "B8";
+  }
+  /******************************* NAVBAR *******************************/
+  header {
+    display: grid;
+  }
+  header .navbar {
+    display: grid;
+    flex: 0;
+  }
+  header .navbar .cyc {
+    height: 3rem;
+    margin-left: 0.2rem;
+  }
+  header .navbar .menu {
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "nosotros servicios " "productos contacto ";
+  }
+  header .navbar .menu .inicioinicio {
+    display: none;
+  }
+  header .navbar .menu .nosotrosinicio {
+    grid-area: nosotros;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  header .navbar .menu .serviciosinicio {
+    grid-area: servicios;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  header .navbar .menu .productosinicio {
+    grid-area: productos;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  header .navbar .menu .contactoinicio {
+    grid-area: contacto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  header .syso {
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1r 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "logo menu menu" "logo menu menu";
+  }
+  header .syso .logoinicio {
+    grid-area: logo;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
