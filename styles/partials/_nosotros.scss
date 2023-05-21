@@ -6,6 +6,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         color: white;
+        justify-content: center;
+
+        .rowcontacto {
+            display: flex;
+            
+        }
 
         .main__section__cajita__nosotros {
             padding: 2rem;
@@ -39,13 +45,13 @@
 
         .imagenlocal {
             display: flex;
+            max-width: 100%;
             margin-top: 1rem;
             margin-bottom: 1rem;
             margin-right: auto;
             margin-left: auto;
             justify-content: center;
             align-items: center;
-            padding: 2rem;
 
         }
 

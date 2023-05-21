@@ -1,159 +1,29 @@
 @media screen and (max-width: 991px) {
 
-    /*********************** NOSOTROS *********************/
+    /******************************* IMG LOCAL NOSOTROS *******************************/
 
-
-
-
-
-    /******************************* MAPA Y DE CONTACTOS *******************************/
-    .formulariocontacto {
-        width: 100%;
+    .rownosotros {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
-    .mapaubicacion {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        .mapaoficina {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
+    /******************************* IMG LOCAL NOSOTROS *******************************/
+    .nosotros__div__div{
+    .rowcontacto {
+        display: grid;
+        grid-template-columns: 1fr;
     }
+    }
+
 }
 
 @media screen and (max-width: 720px) {
 
     /******************************* MAPA Y FORMULARIO DE CONTACTOS *******************************/
-    .formulariocontacto {
-        margin-right: auto;
-        margin-left: auto;
-        width: 100%;
-    }
 
-    .mapaubicacion {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        .mapaoficina {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    }
 }
 
 @media screen and (max-width: 575px) {
 
-    /****************************** INICIO *********************************/
-    body {
-        .grilla {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            grid-template-areas:
-                "A1"
-                "B1"
-                "A2"
-                "B2"
-                "A3"
-                "B3"
-                "A4"
-                "B4"
-                "A5"
-                "B5"
-                "A6"
-                "B6"
-                "A7"
-                "B7"
-                "A8"
-                "B8";
-        }
-    }
-
     /******************************* NAVBAR *******************************/
-    header {
-        display: grid;
-
-        .navbar {
-            display: grid;
-            flex: 0;
-
-            .cyc {
-                height: 3rem;
-                margin-left: 0.2rem;
-            }
-
-            .menu {
-                grid-area: menu;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 1fr 1fr;
-                grid-template-areas:
-                    "nosotros servicios "
-                    "productos contacto ";
-
-                .inicioinicio {
-                    display: none
-                }
-
-                .nosotrosinicio {
-                    grid-area: nosotros;
-                    display: grid;
-                    justify-items: center;
-                    align-items: center;
-                    justify-content: center;
-                    align-content: center;
-                }
-
-                .serviciosinicio {
-                    grid-area: servicios;
-                    display: grid;
-                    justify-items: center;
-                    align-items: center;
-                    justify-content: center;
-                    align-content: center;
-                }
-
-                .productosinicio {
-                    grid-area: productos;
-                    display: grid;
-                    justify-items: center;
-                    align-items: center;
-                    justify-content: center;
-                    align-content: center;
-                }
-
-                .contactoinicio {
-                    grid-area: contacto;
-                    display: grid;
-                    justify-items: center;
-                    align-items: center;
-                    justify-content: center;
-                    align-content: center;
-                }
-            }
-        }
-
-        .syso {
-            justify-content: center;
-            text-align: center;
-            display: grid;
-            grid-template-columns: 1r 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas:
-                "logo menu menu"
-                "logo menu menu";
-
-            .logoinicio {
-                grid-area: logo;
-                display: grid;
-                justify-items: center;
-                align-items: center;
-                justify-content: center;
-                align-content: center;
-            }
-        }
-    }
 }

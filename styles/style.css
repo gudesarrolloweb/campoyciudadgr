@@ -28,11 +28,11 @@ header {
 }
 header .navbar {
   animation: slide-in-fwd-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  align-items: center;
+  justify-content: space-evenly;
   display: flex;
   flex: 1;
-  position: relative;
-  justify-content: space-evenly;
+  font-size: large;
+  z-index: 9999;
 }
 header .navbar .cyc {
   height: 3.9rem;
@@ -53,14 +53,6 @@ header .navbar .menu {
   width: 100%;
   margin: 0rem;
 }
-header .navbar .menu .menu_item a {
-  color: #F0F4EF;
-  text-decoration: none;
-  font-size: larger;
-}
-header .navbar .menu .menu_item a:hover {
-  background: rgba(52, 73, 102, 0.3215686275);
-}
 @keyframes slide-in-fwd-center {
   0% {
     transform: translateZ(-1400px);
@@ -71,26 +63,30 @@ header .navbar .menu .menu_item a:hover {
     opacity: 1;
   }
 }
-header .menu_item:nth-child(1) {
+
+.menu_item:nth-child(1) {
   animation-delay: 0.1s;
 }
-header .menu_item:nth-child(2) {
+
+.menu_item:nth-child(2) {
   animation-delay: 0.2s;
 }
-header .menu_item:nth-child(3) {
+
+.menu_item:nth-child(3) {
   animation-delay: 0.3s;
 }
-header .menu_item:nth-child(4) {
+
+.menu_item:nth-child(4) {
   animation-delay: 0.4s;
 }
-header .menu_item:nth-child(5) {
+
+.menu_item:nth-child(5) {
   animation-delay: 0.5s;
 }
 
 body .main__div__div {
   display: flex;
   background-image: url("../img/fondo gaucho.png");
-  height: 100vh;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -102,15 +98,14 @@ body .main__div__div .main__section__cajita {
   margin-right: auto;
   margin-left: auto;
   flex-direction: column;
-  max-width: 30rem;
-  margin: 7rem 0 0 2rem;
+  margin: 3rem 0 3rem 2rem;
 }
 body .main__div__div .main__section__cajita .main__h1 {
   display: flex;
   margin-right: auto;
   margin-left: auto;
   font-size: 3rem;
-  text-shadow: 0px 0px 10px #000000;
+  text-shadow: 0rem 0rem 0.625rem #000000;
 }
 body .main__div__div .main__section__cajita .main__h2 {
   display: flex;
@@ -122,7 +117,7 @@ body .main__div__div .main__section__cajita .main__p {
   margin-right: auto;
   margin-left: auto;
   font-size: 1.2rem;
-  text-shadow: 0px 0px 10px #000000;
+  text-shadow: 0rem 0rem 625rem #000000;
 }
 body .main__div__div .main__section__cajita .mainboton {
   display: flex;
@@ -136,7 +131,6 @@ body .main__div__div .main__section__cajita .mainboton .main__button {
   border: 0.4rem double #ffffff;
   box-shadow: 0rem 0rem 1rem #ffffff;
   margin: 1rem;
-  max-width: 22rem;
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -209,6 +203,10 @@ footer .copy {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  justify-content: center;
+}
+.nosotros__div__div .rowcontacto {
+  display: flex;
 }
 .nosotros__div__div .main__section__cajita__nosotros {
   padding: 2rem;
@@ -238,13 +236,13 @@ footer .copy {
 }
 .nosotros__div__div .imagenlocal {
   display: flex;
+  max-width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
 }
 .nosotros__div__div .carousel {
   display: flex;
@@ -335,13 +333,11 @@ footer .copy {
 }
 
 .rowcontacto {
-  display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   text-align: center;
 }
-
-.formulariocontacto {
+.rowcontacto .formulariocontacto {
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -350,7 +346,7 @@ footer .copy {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.formulariocontacto .cajitafijo {
+.rowcontacto .formulariocontacto .cajitafijo {
   padding: 1rem;
   margin: 0rem;
   display: flex;
@@ -358,14 +354,14 @@ footer .copy {
   align-items: center;
   justify-content: center;
 }
-.formulariocontacto .cajitafijo .logocontacto {
+.rowcontacto .formulariocontacto .cajitafijo .logocontacto {
   background-color: #ffffff;
   border-radius: 50%;
   height: 3rem;
   margin-right: 1rem;
   margin-left: 1rem;
 }
-.formulariocontacto .cajitamail {
+.rowcontacto .formulariocontacto .cajitamail {
   padding: 1rem;
   margin: 0rem;
   display: flex;
@@ -373,14 +369,14 @@ footer .copy {
   align-items: center;
   justify-content: center;
 }
-.formulariocontacto .cajitamail .logomail {
+.rowcontacto .formulariocontacto .cajitamail .logomail {
   background-color: #ffffff;
   border-radius: 50%;
   height: 3rem;
   margin-right: 1rem;
   margin-left: 1rem;
 }
-.formulariocontacto .cajitawsp {
+.rowcontacto .formulariocontacto .cajitawsp {
   padding: 1rem;
   margin: 0rem;
   display: flex;
@@ -388,27 +384,27 @@ footer .copy {
   align-items: center;
   justify-content: center;
 }
-.formulariocontacto .cajitawsp .logowsp {
+.rowcontacto .formulariocontacto .cajitawsp .logowsp {
   background-color: #ffffff;
   border-radius: 50%;
   height: 3rem;
 }
-.formulariocontacto .linkwsp {
+.rowcontacto .formulariocontacto .linkwsp {
   text-decoration: none;
   color: #000000;
 }
-.formulariocontacto .contenidotelefono,
-.formulariocontacto .contenidomail,
-.formulariocontacto .contenidowsp {
+.rowcontacto .formulariocontacto .contenidotelefono,
+.rowcontacto .formulariocontacto .contenidomail,
+.rowcontacto .formulariocontacto .contenidowsp {
   width: 15rem;
 }
-.formulariocontacto .contenidotelefono .sinmargin,
-.formulariocontacto .contenidomail .sinmargin,
-.formulariocontacto .contenidowsp .sinmargin {
+.rowcontacto .formulariocontacto .contenidotelefono .sinmargin,
+.rowcontacto .formulariocontacto .contenidomail .sinmargin,
+.rowcontacto .formulariocontacto .contenidowsp .sinmargin {
   display: flex;
   margin: 0rem;
 }
-.formulariocontacto .logowsp {
+.rowcontacto .formulariocontacto .logowsp {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -421,15 +417,6 @@ footer .copy {
   border-radius: 2rem;
   padding: 1rem;
   background-color: #000000;
-}
-
-.form-floating {
-  margin-bottom: 0.5rem;
-}
-.form-floating .nombre,
-.form-floating .email,
-.form-floating .mensaje {
-  margin-right: 1rem;
 }
 
 .mapaubicacion {
@@ -687,114 +674,20 @@ footer .copy {
 /*************COLORES************/
 /*************COLORES************/
 @media screen and (max-width: 991px) {
-  /*********************** NOSOTROS *********************/
-  /******************************* MAPA Y DE CONTACTOS *******************************/
-  .formulariocontacto {
-    width: 100%;
+  /******************************* IMG LOCAL NOSOTROS *******************************/
+  .rownosotros {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  .mapaubicacion {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .mapaubicacion .mapaoficina {
+  /******************************* IMG LOCAL NOSOTROS *******************************/
+  .nosotros__div__div .rowcontacto {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 720px) {
   /******************************* MAPA Y FORMULARIO DE CONTACTOS *******************************/
-  .formulariocontacto {
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-  }
-  .mapaubicacion {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  .mapaubicacion .mapaoficina {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 }
 @media screen and (max-width: 575px) {
-  /****************************** INICIO *********************************/
-  body .grilla {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "A1" "B1" "A2" "B2" "A3" "B3" "A4" "B4" "A5" "B5" "A6" "B6" "A7" "B7" "A8" "B8";
-  }
   /******************************* NAVBAR *******************************/
-  header {
-    display: grid;
-  }
-  header .navbar {
-    display: grid;
-    flex: 0;
-  }
-  header .navbar .cyc {
-    height: 3rem;
-    margin-left: 0.2rem;
-  }
-  header .navbar .menu {
-    grid-area: menu;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "nosotros servicios " "productos contacto ";
-  }
-  header .navbar .menu .inicioinicio {
-    display: none;
-  }
-  header .navbar .menu .nosotrosinicio {
-    grid-area: nosotros;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  header .navbar .menu .serviciosinicio {
-    grid-area: servicios;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  header .navbar .menu .productosinicio {
-    grid-area: productos;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  header .navbar .menu .contactoinicio {
-    grid-area: contacto;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  header .syso {
-    justify-content: center;
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1r 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo menu menu" "logo menu menu";
-  }
-  header .syso .logoinicio {
-    grid-area: logo;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -19,70 +19,89 @@
 <body>
 
     <header>
-        <div class="container-xxl">
-            <nav class="navbar syso">
+
+        <nav class="navbar navbar-expand-lg container-xxl" data-bs-theme="dark">
+            <div class="container-fluid">
                 <a class="logoinicio" href="../index.html"><img class="cyc wow fadeInDown" src="../img/campoyciudad.png"
                         alt="logocampoyciudad"></a>
-                <ul class="menu">
-                    <li class="inicioinicio menu_item wow fadeInLeft"><a href="../index.html">Inicio</a></li>
-                    <li class="nosotrosinicio menu_item wow fadeInLeft"><a href="../pages/nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="productosinicio menu_item wow fadeInLeft"><a href="../pages/productos.html">Productos</a>
-                    </li>
-                    <li class="contactoinicio menu_item active wow fadeInLeft"><a
-                            href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link wow fadeInLeft" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu_item wow fadeInLeft" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle menu_item wow fadeInLeft" href="./productos.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./calzadodeseguridad.html">Calzado</a></li>
+                                <li><a class="dropdown-item" href="./indumentaria.html">Indumentaria</a></li>
+                                <li><a class="dropdown-item" href="./protecciones.html">Protecciones</a></li>
+                                <li><a class="dropdown-item" href="./primerosauxilios.html">Primeros auxilios</a></li>
+                                <li><a class="dropdown-item" href="./cintas.html">Cintas</a></li>
+                                <li><a class="dropdown-item" href="./señalizacion.html">Señalización</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu_item active wow fadeInLeft" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section class="titulogu">
             <h1 class="tituloppal">Contactanos</h21>
         </section>
-        <section class="nosotros__div__div">
-            
-        <div class="container-xl">
-            <div class="row rowcontacto">
-                <div class="col-md-6 formulariocontacto">
-                    <div class="cajitafijo">
-                        <img class="logocontacto" src="../img/fijo.png" alt="Teléfono fijo">
-                        <div class="contenidotelefono">
-                            <h3 class="sinmargin">Teléfono</h3>
-                            <p class="sinmargin">02374845033</p>
-                            <p class="sinmargin">Lunes a Viernes 9 a 18hs</p>
-                            <p class="sinmargin">Sábados 9 a 13hs</p>
-                        </div>
-                        </a>
-                    </div>
-                    <div class="cajitamail">
-                        <img class="logomail" src="../img/email.png" alt="Email">
-                        <div class="contenidomail">
-                            <h3 class="sinmargin">Email</h3>
-                            <p class="sinmargin">eduardo_urquiza@hotmail.com</p>
-                        </div>
-                    </div>
-                    <div class="cajitawsp">
-                        <a href="https://wa.me/1159460034" class="linkwsp"><img class="logowsp"
-                                src="../img/logo whatsapp.png" alt="Whatsapp">
-                            <div class="contenidowsp">
-                                <h3 class="sinmargin">Whatsapp</h3>
-                                <p class="sinmargin">1559460034</p>
+        <section class="container-xxl text-center nosotros__div__div">
+                <div class="row rowcontacto">
+                    <div class="col formulariocontacto">
+                        <div class="cajitafijo">
+                            <img class="logocontacto" src="../img/fijo.png" alt="Teléfono fijo">
+                            <div class="contenidotelefono">
+                                <h3 class="sinmargin">Teléfono</h3>
+                                <p class="sinmargin">02374845033</p>
                                 <p class="sinmargin">Lunes a Viernes 9 a 18hs</p>
                                 <p class="sinmargin">Sábados 9 a 13hs</p>
-                        </a>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="cajitamail">
+                            <img class="logomail" src="../img/email.png" alt="Email">
+                            <div class="contenidomail">
+                                <h3 class="sinmargin">Email</h3>
+                                <p class="sinmargin">eduardo_urquiza@hotmail.com</p>
+                            </div>
+                        </div>
+                        <div class="cajitawsp">
+                            <a href="https://wa.me/1159460034" class="linkwsp"><img class="logowsp"
+                                    src="../img/logo whatsapp.png" alt="Whatsapp">
+                                <div class="contenidowsp">
+                                    <h3 class="sinmargin">Whatsapp</h3>
+                                    <p class="sinmargin">1559460034</p>
+                                    <p class="sinmargin">Lunes a Viernes 9 a 18hs</p>
+                                    <p class="sinmargin">Sábados 9 a 13hs</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mapaubicacion">
+                <div class="col mapaubicacion">
                     <iframe class="mapaoficina rounded-5"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4644.023598786628!2d-58.95395539749084!3d-34.608698250639115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc8fc6c65fe869%3A0x5e58383947a2cfe8!2sCampo%20y%20Ciudad%20I!5e0!3m2!1ses!2sar!4v1684514088997!5m2!1ses!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
-        </div>
         </section>
     </main>
 
